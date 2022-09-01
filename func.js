@@ -1,5 +1,8 @@
 let precioBase = parseInt(prompt("Ingrese precio del juego"))
-while(true){
+let continuar = parseInt(prompt("Desea continuar? SI/NO"))
+
+
+while(continuar == 'si'){
     if(!isNaN(precioBase) && precioBase != null && precioBase !=""){
         break
     }else{
