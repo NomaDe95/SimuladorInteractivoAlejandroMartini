@@ -1,13 +1,16 @@
-//Valor a multiplicar con el precio base del juego
-let imp = 1.74
-//Colocar precio base del juego
-let precio = pedirPrecio()
-
-function pedirPrecio(){
-    let precioBase = parseInt(prompt("Ingrese precio"))
-    return precioBase
+let precioBase = parseInt(prompt("Ingrese precio del juego"))
+while(true){
+    if(!isNaN(precioBase) && precioBase != null && precioBase !=""){
+        break
+    }else{
+        alert("No es un numero")
+        continue
+    }
 }
 
-function precioTotal(){
-    
+function sumaImp(precioBase){
+    return (precioBase * 1.74)
 }
+
+console.log("El precio más impuestos es de $" + sumaImp(precioBase))
+alert("El precio más impuestos es de $" + sumaImp(precioBase))
