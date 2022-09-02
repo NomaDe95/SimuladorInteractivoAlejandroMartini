@@ -1,4 +1,5 @@
 let precioBase = parseInt(prompt("Ingrese precio del juego"))
+
 let continuar = parseInt(prompt("Desea continuar? SI/NO"))
 
 
